@@ -1,0 +1,5 @@
+yt-dlp
+scenedetect[opencv]
+opencv-python
+numpy
+faster-whisper
