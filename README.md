@@ -44,6 +44,14 @@ python analyze.py <url|file.mp4> [--out DIR] [--threshold 27] [--model small] [-
 - Downloading uses [yt-dlp](https://github.com/yt-dlp/yt-dlp). Sites change often; if a download fails, run `pip install -U yt-dlp`, or download the file yourself and pass the local path.
 - This tool is for **analysis and reference**. Do not reuse footage, text, faces or logos you do not own.
 
+## Development
+
+```bash
+python -m unittest -v
+```
+
+CI runs the tests on Python 3.9, 3.11 and 3.12. Heavy dependencies (OpenCV, PySceneDetect, faster-whisper) are imported lazily, so the unit tests need none of them. Contributions are welcome: see the open issues labelled `good first issue`.
+
 ## License
 
 MIT
